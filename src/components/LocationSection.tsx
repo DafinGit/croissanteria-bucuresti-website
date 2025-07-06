@@ -1,12 +1,20 @@
 
 import React from 'react';
 import { MapPin, Clock, Phone, Mail, Car, Train } from 'lucide-react';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 const LocationSection = () => {
+  const { ref: titleRef, isVisible: isTitleVisible } = useScrollAnimation({ threshold: 0.2, triggerOnce: true });
+  const { ref: infoRef, isVisible: isInfoVisible } = useScrollAnimation({ threshold: 0.2, triggerOnce: true });
+  const { ref: mapRef, isVisible: isMapVisible } = useScrollAnimation({ threshold: 0.2, triggerOnce: true });
+
   return (
     <section id="location" className="py-20 bg-gradient-cream">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
+        <div
+          ref={titleRef}
+          className={`text-center mb-16 opacity-0 ${isTitleVisible ? 'animate-fade-in' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
             Vino să Ne Vizitezi
           </h2>
@@ -17,7 +25,10 @@ const LocationSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Location Info */}
-          <div className="animate-slide-in-left">
+          <div
+            ref={infoRef}
+            className={`opacity-0 ${isInfoVisible ? 'animate-slide-in-left' : ''}`}
+          >
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h3 className="text-2xl font-bold mb-6 text-primary font-playfair">
                 Informații de Contact
@@ -96,7 +107,10 @@ const LocationSection = () => {
           </div>
 
           {/* Map */}
-          <div className="animate-slide-in-right">
+          <div
+            ref={mapRef}
+            className={`opacity-0 ${isMapVisible ? 'animate-slide-in-right' : ''}`}
+          >
             <div className="bg-white rounded-2xl shadow-lg p-4 h-full">
               <div className="w-full h-96 lg:h-full min-h-[400px] bg-gray-200 rounded-xl overflow-hidden">
                 <iframe
