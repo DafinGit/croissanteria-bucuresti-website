@@ -26,7 +26,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/40770fb9-71bc-4421-bdf4-b633d13da253.png" 
               alt="Croissanteria Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 
