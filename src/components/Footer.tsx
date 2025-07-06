@@ -84,31 +84,31 @@ const Footer = () => {
             <div className="space-y-2">
               <button 
                 onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 text-sm hover:text-primary transition-colors"
+                className="block text-background/80 text-sm hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors"
               >
                 Acasă
               </button>
               <button 
                 onClick={() => document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 text-sm hover:text-primary transition-colors"
+                className="block text-background/80 text-sm hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors"
               >
                 Meniu
               </button>
               <button 
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 text-sm hover:text-primary transition-colors"
+                className="block text-background/80 text-sm hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors"
               >
                 Despre Noi
               </button>
               <button 
                 onClick={() => document.getElementById('location')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 text-sm hover:text-primary transition-colors"
+                className="block text-background/80 text-sm hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors"
               >
                 Locație
               </button>
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 text-sm hover:text-primary transition-colors"
+                className="block text-background/80 text-sm hover:text-primary hover:underline decoration-primary underline-offset-4 transition-colors"
               >
                 Contact
               </button>

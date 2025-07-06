@@ -1,8 +1,12 @@
 
 import React from 'react';
 import { Award, Heart, Users, Wheat } from 'lucide-react';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 const AboutSection = () => {
+  const { ref: leftContentRef, isVisible: isLeftVisible } = useScrollAnimation({ threshold: 0.2, triggerOnce: true });
+  const { ref: rightContentRef, isVisible: isRightVisible } = useScrollAnimation({ threshold: 0.2, triggerOnce: true });
+
   const features = [
     {
       icon: <Wheat className="w-12 h-12 text-primary" />,
@@ -31,7 +35,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div className="animate-slide-in-left">
+          <div
+            ref={leftContentRef}
+            className={`opacity-0 ${isLeftVisible ? 'animate-slide-in-left' : ''}`}
+          >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient font-playfair">
               Povestea Croissanteria
             </h2>
@@ -65,13 +72,16 @@ const AboutSection = () => {
           </div>
 
           {/* Right Content - Features */}
-          <div className="animate-slide-in-right">
+          <div
+            ref={rightContentRef}
+            className={`opacity-0 ${isRightVisible ? 'animate-slide-in-right' : ''}`}
+          >
             <div className="grid sm:grid-cols-2 gap-8">
               {features.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="text-center p-6 rounded-2xl bg-gradient-cream hover-lift"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  className={`text-center p-6 rounded-2xl bg-gradient-cream hover-lift opacity-0 ${isRightVisible ? 'animate-fade-in' : ''}`}
+                  style={{ animationDelay: isRightVisible ? `${index * 0.1}s` : '0s' }}
                 >
                   <div className="flex justify-center mb-4">
                     {feature.icon}

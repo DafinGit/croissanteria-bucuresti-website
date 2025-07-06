@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 const Hero = () => {
+  const { ref: heroContentRef, isVisible } = useScrollAnimation({ threshold: 0.2, triggerOnce: true });
+
   const scrollToMenu = () => {
     const menuSection = document.getElementById('menu');
     if (menuSection) {
@@ -26,7 +29,10 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 text-center text-white">
-        <div className="animate-fade-in">
+        <div
+          ref={heroContentRef}
+          className={`opacity-0 ${isVisible ? 'animate-fade-in' : ''}`}
+        >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 font-playfair">
             Croissanteria
           </h1>
@@ -40,13 +46,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={scrollToMenu}
-              className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover-lift"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover-lift active:scale-95"
             >
               Vezi Meniul Nostru
             </button>
             <a
               href="tel:+40721234567"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-foreground transition-all duration-300"
+              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-foreground transition-all duration-300 active:scale-95"
             >
               Comandă Acum
             </a>

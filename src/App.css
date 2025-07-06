@@ -1,8 +1,8 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* text-align: center; */ /* Removed to allow more specific text alignment */
+  /* padding: 2rem; */ /* Removed as sections handle their own padding via containers */
 }
 
 .logo {

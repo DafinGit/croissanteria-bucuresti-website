@@ -126,4 +126,17 @@ All colors MUST be HSL.
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
+
+  .bg-hero-animated {
+    animation: slow-zoom-in 30s ease-out infinite alternate;
+  }
+}
+
+@keyframes slow-zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
