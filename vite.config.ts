@@ -15,6 +15,9 @@ export default defineConfig(({ mode }) => ({
     componentTagger(),
   ].filter(Boolean),
   base: '/croissanteria-bucuresti-website/', // Set base path for GitHub Pages
+  build: {
+    outDir: 'dist', // Explicitly set output directory (default is 'dist')
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
