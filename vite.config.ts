@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: '/croissanteria-bucuresti-website/', // Set base path for GitHub Pages
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
