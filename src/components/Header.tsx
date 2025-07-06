@@ -23,11 +23,9 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/40770fb9-71bc-4421-bdf4-b633d13da253.png" 
-              alt="Croissanteria Logo" 
-              className="h-24 w-auto"
-            />
+            <h1 className="text-3xl font-bold text-gradient font-playfair">
+              Croissanteria
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
