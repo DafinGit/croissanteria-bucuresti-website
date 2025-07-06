@@ -7,22 +7,22 @@ const AboutSection = () => {
     {
       icon: <Wheat className="w-12 h-12 text-primary" />,
       title: "Ingrediente Premium",
-      description: "Folosim doar cele mai fine ingrediente: unt francez, făină organică și condimente naturale pentru un gust autentic."
+      description: "Selectăm doar cele mai fine ingrediente pentru a vă oferi produse de cea mai înaltă calitate și gust exceptional."
     },
     {
       icon: <Heart className="w-12 h-12 text-primary" />,
-      title: "Pasiune Artizanală",
-      description: "Fiecare croissant este modelat manual cu dragoste și atenție la detalii, respectând tehnicile tradiționale franceze."
+      title: "Pasiune pentru Calitate",
+      description: "Ne dedicăm să vă oferim cele mai bune produse, proaspete zilnic, pentru o experiență culinară de neuitat."
     },
     {
       icon: <Award className="w-12 h-12 text-primary" />,
       title: "Calitate Garantată",
-      description: "Producem zilnic proaspăt, fără conservanți sau aditivi artificiali, pentru o experiență culinară autentică."
+      description: "Produse proaspete zilnic, fără conservanți sau aditivi artificiali, pentru o experiență culinară autentică."
     },
     {
       icon: <Users className="w-12 h-12 text-primary" />,
-      title: "Echipă Expertă",
-      description: "Brutarii noștri au fost instruiți în tehnicile clasice franceze și aduc ani de experiență în arta patiseriei."
+      title: "Echipă Dedicată",
+      description: "Echipa noastră este dedicată să vă ofere cea mai bună experiență și să vă servească cu produse de înaltă calitate."
     }
   ];
 
@@ -36,17 +36,17 @@ const AboutSection = () => {
               Povestea Croissanteria
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Croissanteria s-a născut din pasiunea noastră pentru arta patiseriei franceze și dorința de a aduce 
-              Bucureștiului cel mai autentic gust al croissantelor artizanale.
+              Croissanteria s-a născut din pasiunea noastră pentru gusturile rafinate și dorința de a aduce 
+              Bucureștiului cel mai autentic gust al croissantelor premium.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              În fiecare dimineață, brutarii noștri încep lucrul înainte de răsărit pentru a pregăti aluatul perfect, 
-              folosind tehnici tradiționale transmise din generație în generație. Rezultatul? Croissante cu o coajă 
-              crocantă și un interior pufos, care îți vor trezi toate simțurile.
+              În fiecare zi ne asigurăm că primim produse proaspete de cea mai înaltă calitate, 
+              selectate cu grijă pentru a vă oferi o experiență culinară memorabilă. 
+              Fiecare produs este ales cu atenție pentru gustul și prospețimea sa excepțională.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              De la croissantul clasic până la creațiile noastre gourmet, fiecare produs este o mică operă de artă 
-              culinară, gândită să îți ofere o experiență memorabilă în fiecare zi.
+              De la croissantul clasic până la creațiile noastre gourmet, fiecare produs este selectat 
+              cu grijă pentru a vă oferi o experiență delicioasă în fiecare zi.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="bg-primary/10 px-6 py-4 rounded-lg">
@@ -59,7 +59,7 @@ const AboutSection = () => {
               </div>
               <div className="bg-primary/10 px-6 py-4 rounded-lg">
                 <div className="text-3xl font-bold text-primary">20+</div>
-                <div className="text-sm text-muted-foreground">Produse artizanale</div>
+                <div className="text-sm text-muted-foreground">Produse premium</div>
               </div>
             </div>
           </div>

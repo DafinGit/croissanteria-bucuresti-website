@@ -31,10 +31,10 @@ const Hero = () => {
             Croissanteria
           </h1>
           <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto leading-relaxed">
-            Descoperă aroma autentică a croissantelor artizanale în inima Bucureștiului
+            Descoperă gustul autentic al croissantelor premium în inima Bucureștiului
           </p>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Fiecare croissant este modelat cu pasiune și copt la perfecție, folosind doar ingrediente premium
+            Produse de cea mai înaltă calitate, proaspete zilnic, pentru o experiență culinară de neuitat
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

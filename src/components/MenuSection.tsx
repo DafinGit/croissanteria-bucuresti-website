@@ -55,7 +55,7 @@ const MenuSection = () => {
       items: [
         {
           name: "Espresso",
-          description: "Cafea espresso perfect extrasă din boabe proaspăt prăjite",
+          description: "Cafea espresso perfect extrasă din boabe de cea mai bună calitate",
           price: "8 RON",
           popular: true
         },
@@ -83,7 +83,7 @@ const MenuSection = () => {
             Meniul Nostru
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Descoperă o selecție rafinată de croissante artizanale și băuturi premium, 
+            Descoperă o selecție rafinată de croissante premium și băuturi de calitate, 
             preparate zilnic cu ingrediente de cea mai înaltă calitate
           </p>
         </div>
